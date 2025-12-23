@@ -26,14 +26,14 @@ jobs:
       - name: Run main.ipynb
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
+          GROUP_CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
         run: |
           jupyter nbconvert --to notebook --execute main.ipynb --inplace --ExecutePreprocessor.timeout=600
 
       - name: Run ratio.ipynb
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
+          GROUP_CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
         run: |
           jupyter nbconvert --to notebook --execute ratio.ipynb --inplace --ExecutePreprocessor.timeout=600
 
