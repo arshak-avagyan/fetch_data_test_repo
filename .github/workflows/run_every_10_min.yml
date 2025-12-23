@@ -43,10 +43,15 @@ jobs:
           jupyter nbconvert --to notebook --execute ratio.ipynb --inplace --ExecutePreprocessor.timeout=600
 
       # 6️⃣ Commit and push only updated notebooks and CSVs
-      - name: Commit updated notebooks/CSV
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add *.csv *.ipynb
-          git commit -m "Update CSVs and notebooks $(date)" || echo "No changes"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+      # - name: Commit updated notebooks/CSV
+      #   run: |
+      #     git config user.name "github-actions"
+      #     git config user.email "actions@github.com"
+      #     git add *.csv *.ipynb
+      #     git commit -m "Update CSVs and notebooks $(date)" || echo "No changes"
+      #     git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5 # Use the auto-commit action
+        with:
+          commit_message: "[Bot] Automated changes from workflow"
