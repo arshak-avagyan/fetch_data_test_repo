@@ -1,0 +1,46 @@
+name: Run notebooks every 10 minutes
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes UTC
+  workflow_dispatch:          # allows manual run
+
+jobs:
+  run-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run main.ipynb
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
+        run: |
+          jupyter nbconvert --to notebook --execute main.ipynb --inplace --ExecutePreprocessor.timeout=600
+
+      - name: Run ratio.ipynb
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
+        run: |
+          jupyter nbconvert --to notebook --execute ratio.ipynb --inplace --ExecutePreprocessor.timeout=600
+
+      - name: Commit updated notebooks/CSV
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Update notebooks/CSV $(date)" || echo "No changes"
+          git push
