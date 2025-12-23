@@ -1,0 +1,12 @@
+# Core libraries
+pandas
+numpy
+requests
+python-dotenv
+
+# Jupyter / notebook execution
+jupyter
+nbconvert
+
+# Optional for date handling (usually included in pandas)
+python-dateutil
