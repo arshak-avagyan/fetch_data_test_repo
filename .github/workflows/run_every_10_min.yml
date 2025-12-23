@@ -42,6 +42,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add *.csv *.ipynb
-          git commit -m "Update notebooks/CSV $(date)" || echo "No changes"
+          git commit -m "Update CSVs and notebook outputs"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
-
