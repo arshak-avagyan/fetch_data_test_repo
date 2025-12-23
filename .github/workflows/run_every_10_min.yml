@@ -44,3 +44,4 @@ jobs:
           git add *.csv *.ipynb
           git commit -m "Update notebooks/CSV $(date)" || echo "No changes"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
