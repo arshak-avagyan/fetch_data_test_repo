@@ -52,4 +52,4 @@ jobs:
           branch: main
           file_pattern: |
             data/polymarket_flat_markets_t*.csv
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          push_options: "--repo https://${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git"
