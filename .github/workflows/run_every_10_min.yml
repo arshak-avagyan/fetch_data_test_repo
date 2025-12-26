@@ -44,17 +44,9 @@ jobs:
         run: |
           python ratio.py
 
-      - name: Configure Git for push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
-          
       # 6️⃣ Commit and push only updated CSVs and Python scripts
-      - name: Commit and push updates
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit and push changes
+        uses: devops-infra/action-commit-push@v1.0.3
         with:
-          commit_message: "[Bot] Update CSVs and scripts"
-          branch: main
-          file_pattern: |
-            data/polymarket_flat_markets_t*.csv
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "Workflow Run"
