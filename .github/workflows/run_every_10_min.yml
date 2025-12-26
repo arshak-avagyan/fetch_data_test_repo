@@ -1,4 +1,4 @@
-name: Run notebooks every 10 minutes
+name: Run Python scripts every 10 minutes
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # allows manual run
 
 jobs:
-  run-notebooks:
+  run-scripts:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,7 +34,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           GROUP_CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
         run: |
-          jupyter nbconvert --to notebook --execute main.py --inplace --ExecutePreprocessor.timeout=600
+          python main.py
 
       # 5️⃣ Run ratio.py
       - name: Run ratio.py
@@ -42,13 +42,13 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           GROUP_CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
         run: |
-          jupyter nbconvert --to notebook --execute ratio.py --inplace --ExecutePreprocessor.timeout=600
+          python ratio.py
 
-      # 6️⃣ Commit and push only updated notebooks and CSVs
-      - name: Commit and push CSV updates
+      # 6️⃣ Commit and push only updated CSVs and Python scripts
+      - name: Commit and push updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "[Bot] Update Polymarket CSVs"
+          commit_message: "[Bot] Update CSVs and scripts"
           branch: main
           file_pattern: |
             polymarket_flat_markets_t*.csv
