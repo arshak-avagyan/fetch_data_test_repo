@@ -52,4 +52,4 @@ jobs:
           branch: main
           file_pattern: |
             data/polymarket_flat_markets_t*.csv
-            *.py
+          github_token: ${{ secrets.GITHUB_TOKEN }}
