@@ -10,25 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repository
+      # 1️ Checkout the repository
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Set up Python
+      # 2️ Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # 3️⃣ Install dependencies
+      # 3️ Install dependencies
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 4️⃣ Run main.py
+      # 4️ Run main.py
       - name: Run main.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
         run: |
           python main.py
 
-      # 5️⃣ Run ratio.py
+      # 5️ Run ratio.py
       - name: Run ratio.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -44,7 +44,23 @@ jobs:
         run: |
           python ratio.py
 
-      # 6️⃣ Commit and push only updated CSVs and Python scripts
+      # 5 Run snapshot_signals.py
+      - name: Run snapshot_signals.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          GROUP_CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
+        run: |
+          python snapshot_signals.py
+
+      # 7 Run merge_signals.py
+      - name: Run merge_signals.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          GROUP_CHAT_ID: ${{ secrets.GROUP_CHAT_ID }}
+        run: |
+          python merge_signals.py
+
+      # 8 Commit and push only updated CSVs and Python scripts
       - name: Commit and push changes
         uses: devops-infra/action-commit-push@v1.0.3
         with:

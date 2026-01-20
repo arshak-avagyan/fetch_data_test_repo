@@ -5,10 +5,14 @@ import ast
 from dotenv import load_dotenv
 import os
 
+from pathlib import Path
+import uuid
+
 load_dotenv()  # loads .env locally, no effect in GitHub Actions
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
+SIGNALS_FILE = Path("data/signals.csv")
 
 def merge_and_compute_change(t0_path="data/polymarket_flat_markets_t0.csv", t1_path="data/polymarket_flat_markets_t1.csv"):
     # Load CSVs
@@ -100,6 +104,33 @@ df_master.to_csv("data/market_change.csv", index = False)
 
 
 
+def record_signal(row):
+    SIGNALS_FILE.parent.mkdir(exist_ok=True)
+
+    signal = {
+        "signal_id": str(uuid.uuid4()),
+        "market_id": row["market_id"],
+        "event_slug": row["event_slug"],
+        "market_question": row["market_question"],
+        "signal_time_utc": row["created_at"],
+        "signal_type": "outcome_1",
+        "price_t0": row["outcome_1_t0"],
+        "price_t1": row["outcome_1"],
+        "best_bid_t0": row["market_bestBid_t0"],
+        "best_bid_t1": row["market_bestBid"],
+        "best_ask_t0": row["market_bestAsk_t0"],
+        "best_ask_t1": row["market_bestAsk"],
+        "snapshot_1h_done": False,
+        "snapshot_24h_done": False
+    }
+
+    df_signal = pd.DataFrame([signal])
+
+    if SIGNALS_FILE.exists():
+        df_signal.to_csv(SIGNALS_FILE, mode="a", header=False, index=False)
+    else:
+        df_signal.to_csv(SIGNALS_FILE, index=False)
+
 
 class VolumeAlertService:
     def __init__(self, telegram_token: str, chat_id: str, bid_threshold: float=20, ask_threshold: float=20):
@@ -118,29 +149,6 @@ class VolumeAlertService:
         response = requests.post(self.api_url, json=payload)
         response.raise_for_status()
     
-    # def build_price_change_message(self, row):
-    #     bid_change = row.get("market_bestBid_pct_change", 0)
-    #     ask_change = row.get("market_bestAsk_pct_change", 0)
-    #     # price_change = row.get("outcome_1_change", 0)
-        
-    #     messages = []
-
-    #     def format_msg(label, change):
-    #         direction = "up" if change > 0 else "down"
-    #         arrow = "🟩" if change > 0 else "🔻"
-    #         pct = abs(round(change, 2))
-    #         return f"{arrow} {label} price went {direction} by {pct}%"
-
-    #     # Bid change
-    #     if abs(bid_change) >= self.bid_threshold:
-    #         messages.append(format_msg("Bid", bid_change))
-
-    #     # Ask change
-    #     if abs(ask_change) >= self.ask_threshold:
-    #         messages.append(format_msg("Ask", ask_change))
-
-    #     # If both changed → separate sentences
-    #     return "\n".join(messages)
 
     def build_price_change_message(self, row):
         price_change = row.get("outcome_1_change", 0)
@@ -153,18 +161,10 @@ class VolumeAlertService:
             pct = abs(round(change * 100, 2))
             return f"{arrow} Price went {direction} by {pct} percentage points"
 
-        # Bid change
-        # if abs(bid_change) >= self.bid_threshold:
-        #     messages.append(format_msg("Bid", bid_change))
-
-        # Ask change
-        # if abs(ask_change) >= self.ask_threshold:
-        #     messages.append(format_msg("Ask", ask_change))
-
-        # If both changed → separate sentences
         messages.append(format_msg(price_change))
         return "\n".join(messages)
 
+    
     def build_message(self, row):
         event_slug = row.get("event_slug", "")
         link = f"https://polymarket.com/event/{event_slug}"
@@ -196,18 +196,8 @@ class VolumeAlertService:
         return message
 
     def process_dataframe(self, df):
-        # alert_rows = df[
-        #     (df["market_closed"] == False) &
-        #     (df["market_active"] == True) &
-        #     (df["outcome_1_change"].abs() >= 0.2)
-            # (
-            #     (df["market_bestBid_pct_change"].abs() >= self.bid_threshold) |
-            #     (df["market_bestAsk_pct_change"].abs() >= self.ask_threshold)
-            # )
-        # ]
-
-
         for _, row in df.iterrows():
+            record_signal(row)
             msg = self.build_message(row)
             self.send_message(msg)
 
@@ -252,7 +242,9 @@ df = df[
         # (df["market_bestAsk_pct_change"].abs() >= 20) 
     )
 ]
+
 # display(df[:5])
+
 # Initialize service
 service = VolumeAlertService(
     telegram_token=TELEGRAM_TOKEN,
@@ -261,5 +253,8 @@ service = VolumeAlertService(
     # ask_threshold=20
 )
 
-
+# Execute the script
 service.process_dataframe(df)
+
+
+# df.to_csv("test.csv", index = False)

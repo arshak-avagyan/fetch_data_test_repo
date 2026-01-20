@@ -10,6 +10,8 @@ __pycache__/
 
 *.ipynb
 
-tags.csv
-
 archive/
+
+*.csv
+
+

@@ -23,17 +23,15 @@ def fetch_all_events(min_volume=1000000):
     offset = 0
     limit = 100
 
-    while offset < 600:
+    while True:
         print(f"Fetching offset={offset} ...")
-
         data = fetch_events(limit=limit, offset=offset, min_volume=min_volume)
 
-        if not data:
+        if not data:  # stop when API returns no more events
             break
 
         all_events.extend(data)
         offset += limit
-
         time.sleep(5)
 
     return all_events
