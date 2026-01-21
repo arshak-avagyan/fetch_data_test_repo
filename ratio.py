@@ -177,13 +177,20 @@ class VolumeAlertService:
         end_date = pd.to_datetime(row['market_endDate'], errors='coerce')
         end_date_str = end_date.strftime('%m/%d/%Y') if pd.notna(end_date) else "N/A"
 
+        volume = row.get("market_volume")
+
+        if pd.isna(volume):
+            volume_str = "N/A"
+        else:
+            volume_str = f"{int(round(volume)):,}"
+
         message = (
             "<b>🔥 Market Update</b>\n\n"
             f"{price_change_msg}\n\n"
             f"<b>Question:</b> {row['market_question']}\n\n"
             f"💹 <b>T1 Best Bid / Ask:</b> {row['market_bestBid']} / {row['market_bestAsk']}\n"
             f"💹 <b>T0 Best Bid / Ask:</b> {row['market_bestBid_t0']} / {row['market_bestAsk_t0']}\n"
-            f"📊 <b>Market Volume:</b> {round(row['market_volume']):,}\n"
+            f"📊 <b>Market Volume:</b> {volume_str}\n"
             f"⏰ <b>Ends:</b> {end_date_str}\n\n"
             f"T0 Price: {row['outcome_1_t0']} | T1 Price: {row['outcome_1']}\n\n"
             # "\n\n"
