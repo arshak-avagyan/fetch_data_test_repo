@@ -125,6 +125,7 @@ def record_signal(row):
     }
 
     df_signal = pd.DataFrame([signal])
+    df_signal["signal_time_utc"] = pd.to_datetime(df_signal["signal_time_utc"], utc=True, errors="coerce")
 
     if SIGNALS_FILE.exists():
         df_signal.to_csv(SIGNALS_FILE, mode="a", header=False, index=False)

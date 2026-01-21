@@ -54,17 +54,12 @@ def process_snapshots():
         parse_dates=["signal_time_utc"]
     )
     
-    # Convert to datetime (coerce invalids)
-    signals["signal_time_utc"] = pd.to_datetime(signals["signal_time_utc"], errors="coerce")
-
-    # Only localize tz-naive timestamps
-    signals["signal_time_utc"] = signals["signal_time_utc"].apply(
-        lambda x: x.tz_localize("UTC") if x is not pd.NaT and x.tzinfo is None else x
-    )
+    signals["signal_time_utc"] = pd.to_datetime(signals["signal_time_utc"], utc=True, errors="coerce")
 
     # Drop rows with invalid timestamps
     signals = signals.dropna(subset=["signal_time_utc"])
 
+    
     # Current UTC time
     now = pd.Timestamp.now(tz="UTC")
 
