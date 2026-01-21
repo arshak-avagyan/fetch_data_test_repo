@@ -2,4 +2,4 @@ signal_id,market_id,event_slug,market_question,signal_time_utc,signal_type,price
 f2aec732-e4f5-4ac2-b0a6-a8efcbde7606,537486,how-much-revenue-will-the-us-raise-from-tariffs-in-2025,Will the U.S. collect between $200b and $500b in revenue in 2025?,2026-01-21 02:50:59+00:00,outcome_1,0.68,0.335,0.3,0.33,0.34,0.34,True,False
 b8013814-a3b3-4c41-b42c-03e47da533e7,1065982,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 21, 2026?",2026-01-21 04:57:14+00:00,outcome_1,0.345,0.175,0.28,0.17,0.41,0.18,True,False
 9ce09590-b92e-42ba-bca7-077761eebfe3,1065911,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 21, 2026?",2026-01-21 07:04:45+00:00,outcome_1,0.575,0.996,0.56,0.992,0.59,1.0,True,False
-4e78c77d-acc9-4650-b612-ed7fc4cdc0f2,1065912,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 22, 2026?",2026-01-21 07:39:41+00:00,outcome_1,0.415,0.58,0.41,0.54,0.42,0.62,False,False
+4e78c77d-acc9-4650-b612-ed7fc4cdc0f2,1065912,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 22, 2026?",2026-01-21 07:39:41+00:00,outcome_1,0.415,0.58,0.41,0.54,0.42,0.62,True,False
