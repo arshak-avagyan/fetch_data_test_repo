@@ -1,0 +1,2 @@
+signal_id,market_id,event_slug,market_question,signal_time_utc,signal_type,price_t0,price_t1,best_bid_t0,best_bid_t1,best_ask_t0,best_ask_t1,snapshot_1h_done,snapshot_24h_done,best_ask_1h,best_bid_1h,yes_price_1h
+f2aec732-e4f5-4ac2-b0a6-a8efcbde7606,537486,how-much-revenue-will-the-us-raise-from-tariffs-in-2025,Will the U.S. collect between $200b and $500b in revenue in 2025?,2026-01-21 02:50:59+00:00,outcome_1,0.68,0.335,0.3,0.33,0.34,0.34,True,False,0.37,0.35,0.36

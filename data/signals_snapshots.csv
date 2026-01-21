@@ -1,0 +1,2 @@
+signal_id,market_id,snapshot_type,snapshot_time_utc,best_bid,best_ask,yes_price
+f2aec732-e4f5-4ac2-b0a6-a8efcbde7606,537486,1h,2026-01-21 04:12:41.403545+00:00,0.35,0.37,0.36
