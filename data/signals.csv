@@ -50,6 +50,7 @@ d1f0138d-5d46-4a2b-88f1-f8ff8af0203c,613853,oscars-2026-best-picture-winner,Will
 10fc6ac5-8f4b-485f-bfe5-b68de386c829,690703,sentient-fdv-above-one-day-after-launch,Sentient FDV above $1B one day after launch?,2026-01-22 17:17:03+00:00,outcome_1,0.16,0.385,0.14,0.38,0.18,0.39,True,False
 6abdeab8-615b-4713-988b-2ec6e0d25593,690702,sentient-fdv-above-one-day-after-launch,Sentient FDV above $800M one day after launch?,2026-01-22 17:17:03+00:00,outcome_1,0.5,0.77,0.49,0.71,0.51,0.83,True,False
 96b6865b-a885-4075-9881-1115d9262a12,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 17:17:03+00:00,outcome_1,0.11,0.64,0.1,0.5,0.12,0.78,True,False
-933391e4-947e-41f3-ae30-b240b8e8696b,920355,who-will-trump-meet-with-in-january,Will Trump meet with Giorgia Meloni in January 2026?,2026-01-22 17:47:37+00:00,outcome_1,0.146,0.356,0.106,0.141,0.186,0.571,False,False
-fd7d7fbd-2554-46ec-aff9-08f7dd6549b4,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 17:47:37+00:00,outcome_1,0.64,0.365,0.5,0.25,0.78,0.48,False,False
-adb4ab6f-123e-4074-8365-37d5fcf30885,920355,who-will-trump-meet-with-in-january,Will Trump meet with Giorgia Meloni in January 2026?,2026-01-22 18:00:37+00:00,outcome_1,0.356,0.155,0.141,0.124,0.571,0.186,False,False
+933391e4-947e-41f3-ae30-b240b8e8696b,920355,who-will-trump-meet-with-in-january,Will Trump meet with Giorgia Meloni in January 2026?,2026-01-22 17:47:37+00:00,outcome_1,0.146,0.356,0.106,0.141,0.186,0.571,True,False
+fd7d7fbd-2554-46ec-aff9-08f7dd6549b4,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 17:47:37+00:00,outcome_1,0.64,0.365,0.5,0.25,0.78,0.48,True,False
+adb4ab6f-123e-4074-8365-37d5fcf30885,920355,who-will-trump-meet-with-in-january,Will Trump meet with Giorgia Meloni in January 2026?,2026-01-22 18:00:37+00:00,outcome_1,0.356,0.155,0.141,0.124,0.571,0.186,True,False
+bac17643-fc99-4a2d-bebb-371b0cc0d985,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 19:02:28+00:00,outcome_1,0.175,0.38,0.15,0.22,0.2,0.54,False,False
