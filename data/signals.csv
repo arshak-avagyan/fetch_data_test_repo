@@ -54,7 +54,7 @@ d1f0138d-5d46-4a2b-88f1-f8ff8af0203c,613853,oscars-2026-best-picture-winner,Will
 fd7d7fbd-2554-46ec-aff9-08f7dd6549b4,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 17:47:37+00:00,outcome_1,0.64,0.365,0.5,0.25,0.78,0.48,True,True
 adb4ab6f-123e-4074-8365-37d5fcf30885,920355,who-will-trump-meet-with-in-january,Will Trump meet with Giorgia Meloni in January 2026?,2026-01-22 18:00:37+00:00,outcome_1,0.356,0.155,0.141,0.124,0.571,0.186,True,True
 bac17643-fc99-4a2d-bebb-371b0cc0d985,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 19:02:28+00:00,outcome_1,0.175,0.38,0.15,0.22,0.2,0.54,True,True
-40c1b414-e998-475e-a588-830448347e7d,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 19:33:49+00:00,outcome_1,0.38,0.18,0.22,0.16,0.54,0.2,True,False
+40c1b414-e998-475e-a588-830448347e7d,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 19:33:49+00:00,outcome_1,0.38,0.18,0.22,0.16,0.54,0.2,True,True
 e6a99817-96c5-472a-8dea-09989fdb81f1,1199783,next-country-us-strikes-918,Will the US strike Syria next?,2026-01-22 21:57:36+00:00,outcome_1,0.1075,0.2705,0.097,0.155,0.118,0.386,True,False
 742f5535-ca54-42b6-a595-63e0d67715cb,1243277,ukraine-officially-agrees-to-a-us-backed-ceasefire-framework-in-2025,Ukraine officially agrees to a US backed ceasefire framework by February 28?,2026-01-22 23:35:21+00:00,outcome_1,0.565,0.22,0.24,0.19,0.89,0.25,True,False
 9a7d3a23-d358-4252-abb1-90cea4d396ea,676786,ipos-before-2027,Brex IPO before 2027?,2026-01-23 02:56:54+00:00,outcome_1,0.03,0.171,0.021,0.042,0.039,0.3,True,False
