@@ -33,7 +33,7 @@ c64b3ac2-758c-4389-8353-11eed3206311,1217482,what-price-will-bitcoin-hit-january
 8d6998f5-7f41-422c-9121-76dc8135c1c9,1236531,seeker-fdv-above-one-day-after-launch,Seeker FDV above $150M one day after launch?,2026-01-21 22:15:24+00:00,outcome_1,0.53,0.56,0.16,0.38,0.9,0.74,True,True
 fbd9b9ff-5140-46c0-8d4d-8bd29a77b729,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-21 22:47:01+00:00,outcome_1,0.425,0.82,0.37,0.77,0.48,0.87,True,True
 0d16b75f-97ff-4eb4-bc8e-b84be2e33f70,1236531,seeker-fdv-above-one-day-after-launch,Seeker FDV above $150M one day after launch?,2026-01-21 22:47:01+00:00,outcome_1,0.56,0.83,0.38,0.75,0.74,0.91,True,True
-9f95eff3-65d6-4cf4-85ce-0e46906bde89,1236531,seeker-fdv-above-one-day-after-launch,Seeker FDV above $150M one day after launch?,2026-01-22 01:25:49+00:00,outcome_1,0.93,0.0045,0.91,,0.95,0.009,True,False
+9f95eff3-65d6-4cf4-85ce-0e46906bde89,1236531,seeker-fdv-above-one-day-after-launch,Seeker FDV above $150M one day after launch?,2026-01-22 01:25:49+00:00,outcome_1,0.93,0.0045,0.91,,0.95,0.009,True,True
 e4458eba-7ec7-488f-afc2-744c0d18f409,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 06:20:55+00:00,outcome_1,0.57,0.37,0.52,0.2,0.62,0.54,True,False
 fa293c8a-4646-4eb5-a612-e30621c49a2c,663472,will-trump-meet-with-putin-again-by,"Will Trump meet with Putin by March 31, 2026?",2026-01-22 11:33:06+00:00,outcome_1,0.175,0.645,0.16,0.5,0.19,0.79,True,False
 9f3359f8-e78e-43f8-a754-c10585ae48bb,920347,who-will-trump-meet-with-in-january,Will Trump meet with Vladimir Putin in January 2026?,2026-01-22 11:33:06+00:00,outcome_1,0.0325,0.1505,0.03,0.051,0.035,0.25,True,False
@@ -57,3 +57,5 @@ bac17643-fc99-4a2d-bebb-371b0cc0d985,1065983,will-israel-strike-gaza-on-358,"Wil
 40c1b414-e998-475e-a588-830448347e7d,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 19:33:49+00:00,outcome_1,0.38,0.18,0.22,0.16,0.54,0.2,True,False
 e6a99817-96c5-472a-8dea-09989fdb81f1,1199783,next-country-us-strikes-918,Will the US strike Syria next?,2026-01-22 21:57:36+00:00,outcome_1,0.1075,0.2705,0.097,0.155,0.118,0.386,True,False
 742f5535-ca54-42b6-a595-63e0d67715cb,1243277,ukraine-officially-agrees-to-a-us-backed-ceasefire-framework-in-2025,Ukraine officially agrees to a US backed ceasefire framework by February 28?,2026-01-22 23:35:21+00:00,outcome_1,0.565,0.22,0.24,0.19,0.89,0.25,True,False
+9a7d3a23-d358-4252-abb1-90cea4d396ea,676786,ipos-before-2027,Brex IPO before 2027?,2026-01-23 02:56:54+00:00,outcome_1,0.03,0.171,0.021,0.042,0.039,0.3,False,False
+344b825d-ae66-4233-9ffa-5c849e79f4ab,1032304,si-hit-jan-2026,Will Silver (SI) hit (HIGH) $100 by end of January?,2026-01-23 02:56:54+00:00,outcome_1,0.5865,0.8155,0.573,0.803,0.6,0.828,False,False
