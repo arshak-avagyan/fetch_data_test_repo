@@ -40,8 +40,8 @@ fa293c8a-4646-4eb5-a612-e30621c49a2c,663472,will-trump-meet-with-putin-again-by,
 3e050546-85e4-492f-b52b-cdaf193ed877,663472,will-trump-meet-with-putin-again-by,"Will Trump meet with Putin by March 31, 2026?",2026-01-22 11:49:42+00:00,outcome_1,0.645,0.25,0.5,0.24,0.79,0.26,True,True
 cdf4e1e8-3cc9-42fe-907d-1f2391f8e987,690701,sentient-fdv-above-one-day-after-launch,Sentient FDV above $600M one day after launch?,2026-01-22 12:37:55+00:00,outcome_1,0.595,0.865,0.58,0.85,0.61,0.88,True,True
 a1093be8-3372-435b-8adc-eecafe20372e,690702,sentient-fdv-above-one-day-after-launch,Sentient FDV above $800M one day after launch?,2026-01-22 12:37:55+00:00,outcome_1,0.31,0.505,0.3,0.42,0.32,0.59,True,True
-2bd6deaf-8284-498e-9bb4-154dce7c673d,1192651,ethereum-above-on-january-22,"Will the price of Ethereum be above $3,000 on January 22?",2026-01-22 14:04:37+00:00,outcome_1,0.5285,0.231,0.51,0.212,0.547,0.25,True,False
-bdb902dd-33aa-424d-a4c5-b1b2539b50e0,1192705,bitcoin-above-on-january-22,"Will the price of Bitcoin be above $90,000 on January 22?",2026-01-22 14:04:37+00:00,outcome_1,0.615,0.33,0.61,0.32,0.62,0.34,True,False
+2bd6deaf-8284-498e-9bb4-154dce7c673d,1192651,ethereum-above-on-january-22,"Will the price of Ethereum be above $3,000 on January 22?",2026-01-22 14:04:37+00:00,outcome_1,0.5285,0.231,0.51,0.212,0.547,0.25,True,True
+bdb902dd-33aa-424d-a4c5-b1b2539b50e0,1192705,bitcoin-above-on-january-22,"Will the price of Bitcoin be above $90,000 on January 22?",2026-01-22 14:04:37+00:00,outcome_1,0.615,0.33,0.61,0.32,0.62,0.34,True,True
 bf351908-6dcd-41db-8714-b0e8579a9fa0,1192705,bitcoin-above-on-january-22,"Will the price of Bitcoin be above $90,000 on January 22?",2026-01-22 15:03:57+00:00,outcome_1,0.355,0.145,0.35,0.14,0.36,0.15,True,False
 42453ee9-ddd9-4e87-b95d-916697506f7c,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 16:02:42+00:00,outcome_1,0.095,0.24,0.08,0.13,0.11,0.35,True,False
 9c2fe21b-0022-49c9-8d06-857d7d58d190,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 16:48:49+00:00,outcome_1,0.24,0.11,0.13,0.1,0.35,0.12,True,False
