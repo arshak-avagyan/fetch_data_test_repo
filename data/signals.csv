@@ -44,7 +44,7 @@ a1093be8-3372-435b-8adc-eecafe20372e,690702,sentient-fdv-above-one-day-after-lau
 bdb902dd-33aa-424d-a4c5-b1b2539b50e0,1192705,bitcoin-above-on-january-22,"Will the price of Bitcoin be above $90,000 on January 22?",2026-01-22 14:04:37+00:00,outcome_1,0.615,0.33,0.61,0.32,0.62,0.34,True,True
 bf351908-6dcd-41db-8714-b0e8579a9fa0,1192705,bitcoin-above-on-january-22,"Will the price of Bitcoin be above $90,000 on January 22?",2026-01-22 15:03:57+00:00,outcome_1,0.355,0.145,0.35,0.14,0.36,0.15,True,True
 42453ee9-ddd9-4e87-b95d-916697506f7c,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 16:02:42+00:00,outcome_1,0.095,0.24,0.08,0.13,0.11,0.35,True,True
-9c2fe21b-0022-49c9-8d06-857d7d58d190,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 16:48:49+00:00,outcome_1,0.24,0.11,0.13,0.1,0.35,0.12,True,False
+9c2fe21b-0022-49c9-8d06-857d7d58d190,1065983,will-israel-strike-gaza-on-358,"Will Israel strike Gaza on January 22, 2026?",2026-01-22 16:48:49+00:00,outcome_1,0.24,0.11,0.13,0.1,0.35,0.12,True,True
 88192d0a-14f1-49ed-b9cb-bd3c0139bf10,613851,oscars-2026-best-picture-winner,Will F1 win Best Picture at the 98th Academy Awards?,2026-01-22 17:17:03+00:00,outcome_1,0.145,0.0365,,0.005,0.29,0.068,True,False
 d1f0138d-5d46-4a2b-88f1-f8ff8af0203c,613853,oscars-2026-best-picture-winner,Will Train Dreams win Best Picture at the 98th Academy Awards?,2026-01-22 17:17:03+00:00,outcome_1,0.15,0.035,,0.02,0.3,0.05,True,False
 10fc6ac5-8f4b-485f-bfe5-b68de386c829,690703,sentient-fdv-above-one-day-after-launch,Sentient FDV above $1B one day after launch?,2026-01-22 17:17:03+00:00,outcome_1,0.16,0.385,0.14,0.38,0.18,0.39,True,False
@@ -64,7 +64,7 @@ cea8323a-e5ae-47d6-b83f-54c59563028f,1172396,elon-musk-of-tweets-january-16-janu
 39de70eb-5344-426a-a476-16528ccb68f1,1114183,will-russia-capture-rodynske-by-september-15,Will Russia capture Rodynske by February 28?,2026-01-23 13:55:35+00:00,outcome_1,0.42,0.545,0.38,0.43,0.46,0.66,True,False
 cd1e018c-8675-4de7-95b5-0848603a3529,1065913,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 23, 2026?",2026-01-23 13:55:35+00:00,outcome_1,0.645,0.38,0.64,0.35,0.65,0.41,True,False
 e517e7d0-75ba-4e70-94eb-429f9108babd,1199139,ethereum-above-on-january-23,"Will the price of Ethereum be above $2,900 on January 23?",2026-01-23 14:46:40+00:00,outcome_1,0.8485,0.615,0.833,0.6,0.864,0.63,True,False
-8525c832-0d25-4c95-aeec-e0fb31912933,1249612,will-russia-capture-lyman-in-2025,"Will Russia capture Lyman by February 28, 2026?",2026-01-23 15:49:26+00:00,outcome_1,0.495,0.18,,0.02,0.99,0.34,False,False
+8525c832-0d25-4c95-aeec-e0fb31912933,1249612,will-russia-capture-lyman-in-2025,"Will Russia capture Lyman by February 28, 2026?",2026-01-23 15:49:26+00:00,outcome_1,0.495,0.18,,0.02,0.99,0.34,True,False
 d709a24b-a3c4-47a9-a39e-bdc170fd8424,1199144,bitcoin-price-on-january-23,"Will the price of Bitcoin be between $88,000 and $90,000 on January 23?",2026-01-23 16:46:59+00:00,outcome_1,0.77,0.275,0.76,0.26,0.78,0.29,False,False
 c0821eca-9c8e-4a87-9af6-3c21ca0b9ef5,1199146,bitcoin-price-on-january-23,"Will the price of Bitcoin be between $90,000 and $92,000 on January 23?",2026-01-23 16:46:59+00:00,outcome_1,0.2265,0.73,0.213,0.71,0.24,0.75,False,False
 b73f99fb-87bd-4375-bc0f-9ed48ad6554c,1199177,bitcoin-above-on-january-23,"Will the price of Bitcoin be above $90,000 on January 23?",2026-01-23 16:46:59+00:00,outcome_1,0.275,0.74,0.27,0.72,0.28,0.76,False,False
