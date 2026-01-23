@@ -70,5 +70,5 @@ c0821eca-9c8e-4a87-9af6-3c21ca0b9ef5,1199146,bitcoin-price-on-january-23,"Will t
 b73f99fb-87bd-4375-bc0f-9ed48ad6554c,1199177,bitcoin-above-on-january-23,"Will the price of Bitcoin be above $90,000 on January 23?",2026-01-23 16:46:59+00:00,outcome_1,0.275,0.74,0.27,0.72,0.28,0.76,True,False
 feeb3af6-2d0b-4e5d-b0e8-078ed1813506,1199779,next-country-us-strikes-918,Will the US strike Somalia next?,2026-01-23 17:34:59+00:00,outcome_1,0.695,0.93,0.69,0.89,0.7,0.97,True,False
 73458268-f102-40d3-9827-b69e19686563,690703,sentient-fdv-above-one-day-after-launch,Sentient FDV above $1B one day after launch?,2026-01-23 20:14:46+00:00,outcome_1,0.0165,0.132,0.013,0.014,0.02,0.25,True,False
-c64da217-8034-40cf-9d4f-e8fc6ba72cc9,690703,sentient-fdv-above-one-day-after-launch,Sentient FDV above $1B one day after launch?,2026-01-23 20:42:26+00:00,outcome_1,0.132,0.0085,0.014,0.007,0.25,0.01,False,False
-c46af325-4dd1-4f83-a26d-04db2d1bb089,1208040,bitcoin-above-on-january-24,"Will the price of Bitcoin be above $90,000 on January 24?",2026-01-23 20:42:26+00:00,outcome_1,0.6,0.235,0.59,0.22,0.61,0.25,False,False
+c64da217-8034-40cf-9d4f-e8fc6ba72cc9,690703,sentient-fdv-above-one-day-after-launch,Sentient FDV above $1B one day after launch?,2026-01-23 20:42:26+00:00,outcome_1,0.132,0.0085,0.014,0.007,0.25,0.01,True,False
+c46af325-4dd1-4f83-a26d-04db2d1bb089,1208040,bitcoin-above-on-january-24,"Will the price of Bitcoin be above $90,000 on January 24?",2026-01-23 20:42:26+00:00,outcome_1,0.6,0.235,0.59,0.22,0.61,0.25,True,False
