@@ -10,3 +10,6 @@ nbconvert
 
 # Optional for date handling (usually included in pandas)
 python-dateutil
+
+fastapi
+subprocess
