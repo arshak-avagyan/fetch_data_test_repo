@@ -1,4 +1,6 @@
 from fastapi import FastAPI, Header, HTTPException
+from fastapi.responses import FileResponse
+from pathlib import Path
 import subprocess
 import sys
 import time
@@ -27,3 +29,21 @@ def run_job(x_token: str = Header(None)):
         "stdout": result.stdout,
         "stderr": result.stderr,
     }
+
+
+
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+
+@app.get("/files/{filename}")
+def get_file(filename: str, x_token: str = Header(None)):
+    if x_token != os.getenv("JOB_SECRET"):
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
+    file_path = DATA_DIR / filename
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail="File not found")
+
+    return FileResponse(file_path)
