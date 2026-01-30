@@ -172,7 +172,7 @@ e12a297d-f4d4-4fab-986e-cec478d795d1,1235594,bitcoin-price-on-january-28,"Will t
 7ee6e738-111c-48c1-9efa-8c741782badb,1235619,bitcoin-above-on-january-28,"Will the price of Bitcoin be above $90,000 on January 28?",2026-01-28 15:46:24+00:00,outcome_1,0.42,0.19,0.41,0.18,0.43,0.2,True,True
 454f9cf0-41d5-4bb1-97cd-6df71879f56f,676789,ipos-before-2027,Remote IPO before 2027?,2026-01-28 16:05:31+00:00,outcome_1,0.33,0.405,0.29,0.2,0.37,0.61,True,True
 b5d41d35-a944-4d27-a3f6-1625a1161b3c,676794,ipos-before-2027,xAI IPO before 2027?,2026-01-28 17:25:21+00:00,outcome_1,0.215,0.35,0.19,0.2,0.24,0.5,True,True
-4d5fc006-0efe-4ead-a06d-c4da2f740f0e,1032302,si-hit-jan-2026,Will Silver (SI) hit (HIGH) $120 by end of January?,2026-01-28 23:37:00+00:00,outcome_1,0.505,0.7085,0.495,0.708,0.515,0.709,True,False
+4d5fc006-0efe-4ead-a06d-c4da2f740f0e,1032302,si-hit-jan-2026,Will Silver (SI) hit (HIGH) $120 by end of January?,2026-01-28 23:37:00+00:00,outcome_1,0.505,0.7085,0.495,0.708,0.515,0.709,True,True
 76b90fcf-14f4-42ac-b93b-f82db582b00c,676788,ipos-before-2027,Anysphere (Cursor) IPO before 2027?,2026-01-29 01:04:23+00:00,outcome_1,0.405,0.22,0.16,0.16,0.65,0.28,True,False
 28066d8e-b1c6-4574-8e76-8d6dc8666448,694936,which-companies-will-be-acquired-before-2027,Will Nebius Group be acquired before 2027?,2026-01-29 03:32:34+00:00,outcome_1,0.51,0.41,0.08,0.09,0.94,0.73,True,False
 357176f6-0da7-460c-8a52-5074a383adf4,1242960,bitcoin-above-on-january-29,"Will the price of Bitcoin be above $88,000 on January 29?",2026-01-29 03:32:34+00:00,outcome_1,0.81,0.535,0.8,0.53,0.82,0.54,True,False
@@ -216,4 +216,15 @@ fbe3518b-3e5a-4228-a3df-9a28b10a687b,567564,next-prime-minister-of-hungary,Will 
 1d3a055f-3be6-43d6-a9dc-397ed02d4a8d,920389,who-will-trump-talk-to-in-january,Will Trump talk to Vladimir Putin in January?,2026-01-29 18:40:35+00:00,outcome_1,0.5455,0.3415,0.501,0.333,0.59,0.35,True,False
 3795d237-7d1d-4f7e-a18d-e0a52393ee7b,1293917,si-hit-jan-2026,Will Silver (SI) hit (HIGH) $125 by end of January?,2026-01-29 18:40:35+00:00,outcome_1,0.245,0.15,0.04,0.06,0.45,0.24,True,False
 4999d8de-b526-4460-89f9-7ac972cabc04,1194347,will-trump-admin-release-any-more-epstein-related-files-by-816,Will Trump admin release any more Epstein related files by January 31?,2026-01-29 18:40:35+00:00,outcome_1,0.385,0.165,0.36,0.15,0.41,0.18,True,False
-1195ff82-f990-431b-b21c-707ff3179d1e,1065919,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 29, 2026?",2026-01-29 19:47:18+00:00,outcome_1,0.115,0.51,0.11,0.41,0.12,0.61,False,False
+1195ff82-f990-431b-b21c-707ff3179d1e,1065919,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 29, 2026?",2026-01-29 19:47:18+00:00,outcome_1,0.115,0.51,0.11,0.41,0.12,0.61,True,False
+72e8b554-1424-47c9-878d-250acce5c98d,572469,who-will-trump-nominate-as-fed-chair,Will Trump nominate Kevin Warsh as the next Fed chair?,2026-01-30 00:42:10+00:00,outcome_1,0.295,0.785,0.29,0.78,0.3,0.79,False,False
+3e0aa474-232f-4751-a8ee-57a92d4f5bcc,572485,who-will-trump-nominate-as-fed-chair,Will Trump nominate Rick Rieder as the next Fed chair?,2026-01-30 00:42:10+00:00,outcome_1,0.381,0.118,0.379,0.116,0.383,0.12,False,False
+cd81d102-091c-4ecc-b9c8-f7ddfdff4ce6,676785,ipos-before-2027,OpenAI IPO before 2027?,2026-01-30 00:42:10+00:00,outcome_1,0.31,0.485,0.3,0.42,0.32,0.55,False,False
+24296a0b-c2d3-4079-a89d-c77e15fa17e4,676795,ipos-before-2027,SpaceX (Space Exploration Technologies Corp.) IPO before 2027?,2026-01-30 00:42:10+00:00,outcome_1,0.86,0.69,0.85,0.64,0.87,0.74,False,False
+71f7c638-c828-48a1-bded-3de502a4ba25,680392,will-there-be-another-us-government-shutdown-by-january-31,US government shutdown Saturday?,2026-01-30 00:42:10+00:00,outcome_1,0.605,0.375,0.59,0.37,0.62,0.38,False,False
+fe1b7beb-2158-4e94-9f75-4199585adb13,694936,which-companies-will-be-acquired-before-2027,Will Nebius Group be acquired before 2027?,2026-01-30 00:42:10+00:00,outcome_1,0.74,0.57,0.72,0.47,0.76,0.67,False,False
+a5177790-d9d2-49c5-913f-6d8398a4a639,1032232,gc-hit-jan-2026,"Will Gold (GC) hit (HIGH) $5,500 by end of January?",2026-01-30 00:42:10+00:00,outcome_1,0.223,0.5315,0.213,0.465,0.233,0.598,False,False
+d66fea80-0f3e-4970-a8f6-e4ef3c731635,1294094,gc-hit-jan-2026,"Will Gold (GC) hit (HIGH) $5,400 by end of January?",2026-01-30 00:42:10+00:00,outcome_1,0.675,0.725,0.41,0.61,0.94,0.84,False,False
+60851295-1d3b-458f-9e2f-43cd8695b76f,1065919,will-israel-strike-lebanon-on-928,"Will Israel strike Lebanon on January 29, 2026?",2026-01-30 00:42:10+00:00,outcome_1,0.51,0.046,0.41,0.042,0.61,0.05,False,False
+978bfd96-21b3-466a-ab73-690a2d34be96,1261051,how-long-will-the-next-government-shutdown-last,Will the government shutdown last 3 days or more?,2026-01-30 00:42:10+00:00,outcome_1,0.6,0.315,0.57,0.3,0.63,0.33,False,False
+3db845a7-a6bb-40ce-b100-86b835ef4709,1261050,how-long-will-the-next-government-shutdown-last,Will the government shutdown last 1 day or more?,2026-01-30 00:42:10+00:00,outcome_1,0.66,0.36,0.64,0.35,0.68,0.37,False,False
