@@ -12,3 +12,4 @@ nbconvert
 python-dateutil
 
 fastapi
+uvicorn
