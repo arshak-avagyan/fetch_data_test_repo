@@ -2,10 +2,11 @@ from fastapi import FastAPI, Header, HTTPException
 import subprocess
 import sys
 import time
+import os
 
 app = FastAPI()
 
-SECRET = "CHANGE_ME"  # optional but strongly recommended
+SECRET = os.getenv("JOB_SECRET")
 
 @app.get("/run")
 def run_job(x_token: str = Header(None)):

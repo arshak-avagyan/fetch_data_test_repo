@@ -12,4 +12,3 @@ nbconvert
 python-dateutil
 
 fastapi
-subprocess
